@@ -1,0 +1,329 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #c6a461, #9c8f8f);
+    color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teks-container {
+    background: linear-gradient(135deg, #f7d1ab, #b89e83, #897158);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.5s ease-out;
+}
+
+.marquee-container {
+    padding: 15px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #f7f4f1, #dbccbc, #bfa386); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+    display: inline-block; 
+}
+
+marquee {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    animation: colorShift 3s infinite alternate; 
+}
+
+@keyframes colorShift {
+    0% {
+        color: #663300;
+    }
+    50% {
+        color: #663300;
+    }
+    100% {
+        color: #663300;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-container {
+    max-width: 900px;
+    margin: 20px;
+    background-color: #2f2f2f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d8ccb4;
+}
+
+header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin: 0;
+    background: linear-gradient(90deg, #bfa89e, #8d746a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    color: #bfa89e;
+    margin-top: 5px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #d8ccb4;
+    margin-bottom: 15px;
+    object-fit: cover;
+    animation: bounce 2s infinite;
+}
+
+.profile-section h2 {
+    margin: 10px 0 5px;
+    font-size: 1.8em;
+    color: #d8ccb4;
+}
+
+.profile-section .bio {
+    font-size: 1em;
+    color: #bfa89e;
+}
+
+.info-section,
+.skills-section,
+.projects-section {
+    background: rgba(47, 47, 47, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.info-section {
+    background: rgba(47, 47, 47, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+    
+.info-section ul {
+    display: flex;
+    gap: 90px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section li {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #d8ccb4;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.info-section li a {
+    text-decoration: none;
+    color: #bfa89e;
+    transition: color 0.3s ease;
+}
+
+.info-section li a:hover {
+    color: #fff;
+}
+
+.icon {
+    display: inline-flexbox;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1em;
+}
+
+.email-icon::before {
+    content: "✉";
+    font-size: 1.2em;
+}
+
+.instagram-icon::before {
+    content: "📸";
+    font-size: 1.2em;
+}
+
+.location-icon::before {
+    content: "📍"; 
+    font-size: 1.2em;
+}
+
+.contact-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #9c8f8f, #6e6658);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.contact-logo {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #bfa89e, #8d746a);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-logo::before {
+    content: '';
+    width: 60px;
+    height: 40px;
+    background: #f5f5f5;
+    border-radius: 5px;
+    position: absolute;
+    top: 30%;
+    transform: rotate(0deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-logo::after {
+    content: '';
+    width: 30px;
+    height: 10px;
+    background: #d8ccb4;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 35%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transform: rotate(0deg);
+}
+
+.skills-section{
+    text-align: left;
+}
+
+.skills-section .skills-list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: linear-gradient(90deg, #6e6658, #9c8f8f);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #2f2f2f;
+}
+
+.projects-section{
+    text-align: left;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: #403d39;
+    padding: 20px;
+    border-radius: 15px;
+    color: #d8ccb4;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #bfa89e;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #bfa89e;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.portfolio-container,
+.info-section,
+.skills-section,
+.projects-section {
+    animation: fadeIn 1s ease-out;
+}
